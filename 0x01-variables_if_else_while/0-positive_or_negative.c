@@ -9,25 +9,25 @@
  */
 int main(void)
 {
-        int n;
+int n;
 
-        srand(time(0)); /* Seed the random number generator */
+srand(time(0)); /* Seed the random number generator */
 
-        n = rand() - RAND_MAX / 2; /* Generate a random number */
+n = rand() - RAND_MAX / 2; /* Generate a random number */
 
-        printf("%d is ", n); /* Print the random number */
+printf("%d is ", n); /* Print the random number */
 
-        if (n > 0)
-        {
-                printf("positive\n");
-        }
-        else if (n < 0)
-        {
-                printf("negative\n");
-        }
-        else
-        {
-                printf("zero\n");
-        }
-        return (0);
+if (n > 0)
+{
+printf("positive\n");
+}
+else if (n < 0)
+{
+printf("negative\n");
+}
+else
+{
+printf("zero\n");
+}
+return (0);
 }
