@@ -9,6 +9,7 @@
  */
 int main(void)
 {
+
         int n;
 
         srand(time(0)); /* Seed the random number generator */
@@ -16,15 +17,15 @@ int main(void)
         printf("%d is ", n); /* Print the random number */
         if (n > 0)
         {
-                printf("positive\n");
+                printf("positive\n" , n);
         }
         else if (n < 0)
         {
-                printf("negative\n");
+                printf("negative\n" , n);
         }
         else
         {
-                printf("zero\n");
+                printf("zero\n" , n);
         }
         return (0);
 }
