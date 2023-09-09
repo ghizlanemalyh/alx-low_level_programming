@@ -7,7 +7,6 @@
 int main(void)
 {
 int n 0 = 97;
-
 while (n <= 122)
 {
 if (n == 101 || n == 113)
@@ -18,6 +17,6 @@ continue;
 putchar (n);
 n++;
 }
-putchart ('\n');
+putchar ('\n');
 return (0);
 }
