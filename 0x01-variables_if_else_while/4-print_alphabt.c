@@ -6,15 +6,18 @@
  */
 int main(void)
 {
-char alphabet = 'a';
-while (alphabet <= 'z')
+int n 0 = 97;
+
+while (n <= 122)
 {
-if (alphabet != 'q' && alphabet = 'e')
-}
-putcher(alphabet);
+if (n == 101 || n == 113)
 {
-alphabet++;
+n++;
+continue;
 }
-putcher('\n');
+putchar (n);
+n++;
+}
+putchart ('\n');
 return (0);
 }
