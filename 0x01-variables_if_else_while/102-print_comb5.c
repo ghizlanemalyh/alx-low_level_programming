@@ -21,12 +21,10 @@ putchar((Digit2 / 10) + '0');
 putchar((Digit2 % 10) + '0');
 if (Digit1 != 98 || Digit2 != 99)
 {
-`putchar(',');
+putchar(',');
 putchar(' ');
 }
-Digit2++;
 }
-Digit1++;
 }
 }
 putchar('\n');
