@@ -12,6 +12,6 @@ while (n >= 97)
 	putchar(n);
 	n--;
 	}
-putchar('\n')
+putchar('\n');
 return (0);
 }
