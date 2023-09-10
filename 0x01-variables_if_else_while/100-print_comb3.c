@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
  * Return: Always 0
  */
@@ -10,8 +10,9 @@ int main(void)
 int digit1 = 0 ,digit2;
 while (digit1 <= 9)
 {
-digit2 = 0
+digit2 = 0;
 while (digit <= 9)
+
 {
 if (digit != digit2 && digit1 < digit2)
 {
@@ -29,4 +30,5 @@ digit1++;
 }
 putchar('\n');
 return (0);
+
 }
