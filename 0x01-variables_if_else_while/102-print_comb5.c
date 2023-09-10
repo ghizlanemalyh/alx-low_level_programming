@@ -7,13 +7,12 @@
 int main(void)
 {
 int Digit1 = 0, Digit2;
-
 while (Digit1 <= 99)
 {
 Digit2 = Digit1;
 while (Digit2 <= 99)
 {
-if (Digit2 != Digit1)
+if (Digit2 <= Digit1)
 putchar((Digit1 / 10) + 48);
 putchar((Digit1 % 10) + 48);
 putchar(' ');
@@ -25,7 +24,6 @@ putchar(',');
 putchar(' ');
 }
 Digit2++;
-
 Digit1++;
 }
 }
