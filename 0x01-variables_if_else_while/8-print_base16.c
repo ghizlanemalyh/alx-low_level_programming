@@ -7,6 +7,17 @@
 */
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+int n;
+int m;
+
+for (n = 48; n <= 57; n++)
+{
+putchar(n);
+}
+for (m = 97; m <= 102; m++)
+{
+putchar(m);
+}
+putchar('\n');
 return (0);
 }
