@@ -1,14 +1,17 @@
 #include "main.h"
 /**
- * main - make the alphabet
- * Return: 0
+ * print_alphabet - make the alphabet
+ *
+ * Return:Always 0 (Success)
  */
 
-int main(void)
+int print_alphabet(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+int ch;
+for (ch = 97; ch <= 122; ch++)
+{
 _putchar(ch);
+}
 _putchar('\n');
 return (0);
 }
