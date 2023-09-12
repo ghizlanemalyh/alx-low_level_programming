@@ -4,40 +4,38 @@
  *
  * Return: void
  */
-
 void times_table(void)
 {
-int a, b, c, d, e;
+int row, column, product, tens, ones;
 
-
-for (a = 0; a <= 9; a++)
+for (row = 0; row <= 9; row++)
 {
-for (b = 0; b <= 9; b++)
+for (column = 0; column <= 9; column++)
 {
-c = a * b;
-d = c / 10;
-e = c % 10;
-if (b == 0)
+product = row * column;
+tens = product / 10;
+ones = product % 10;
+if (column == 0)
 {
 _putchar('0');
 }
-if (c < 10)
+if (product < 10)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar(e + '0');
+_putchar(ones + '0');
 }
-else
+else if
 {
+
 
 _putchar(',');
 _putchar(' ');
-_putchar(d + '0');
-_putchar(e + '0');
+_putchar(tens + '0');
+_putchar(ones + '0');
 }
 }
 _putchar('\n');
 }
 }
-
