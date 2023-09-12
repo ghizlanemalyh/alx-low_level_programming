@@ -12,33 +12,33 @@ void print_times_table(int a)
 {
 
 
-	int c, m, p;
+	int num, mult, prod;
 
 
 	if (a >= 0 && a <= 15)
 	{
-	for (c = 0; c <= n; c++)
+	for (num = 0; num <= a; num++)
 	{
 	_putchar('0');
-	for (m = 1; m <= a; m++)
+	for (mult = 1; mult <= a; mult++)
 	{
 	_putchar(',');
 	_putchar(' ');
-	p = c * m;
-	if (p <= 99)
+	prod = num * mult;
+	if (prod <= 99)
 	_putchar(' ');
-	if (p <= 9)
+	if (prod <= 9)
 	_putchar(' ');
-	if (p >= 100)
+	if (prod >= 100)
 	{
-	_putchar((p / 100) + '0');
-	_putchar(((p / 10)) % 10 + '0');
+	_putchar((prod / 100) + '0');
+	_putchar(((prod / 10)) % 10 + '0');
 	}
-	else if (p <= 99 && p >= 10)
+	else if (prod <= 99 && prod >= 10)
 	{
-	_putchar((p / 10) + '0');
+	_putchar((prod / 10) + '0');
 	}
-	_putchar((p % 10) + '0');
+	_putchar((prod % 10) + '0');
 	}
 	_putchar('\n');
 	}
