@@ -2,49 +2,49 @@
 
 /**
  * print_times_table - A function that prints the n times table.
- * 
+ * @n: int type number
  * Return: Always 0 (success).
 */
 
 void print_times_table(int n)
 {
-	int a = 0, b, c;
+	int x = 0, y, z;
 
 	if (n > 15 || n < 0)
 		return;
-	while (a <= n)
+	while (x <= n)
 	{
-		for (b = 0; b <= n; b++)
+		for (y = 0; y <= n; y++)
 		{
-			c = a * b;
-			if (c > 99)
+			z = x * y;
+			if (z > 99)
 			{
-				_putchar(c / 100 + '0');
-				_putchar((c / 10 % 10) + '0');
-				_putchar(c % 10 + '0');
+				_putchar(z / 100 + '0');
+				_putchar((z / 10 % 10) + '0');
+				_putchar(z % 10 + '0');
 			}
-			else if (c > 9)
+			else if (z > 9)
 			{
 				_putchar(' ');
-				_putchar(c / 10 + '0');
-				_putchar(c % 10 + '0');
+				_putchar(z / 10 + '0');
+				_putchar(z % 10 + '0');
 			}
-			else if (b != 0)
+			else if (y != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(c + '0');
+				_putchar(z + '0');
 			}
 			else
-				_putchar(c + '0');
+				_putchar(z + '0');
 
-			if (b != n)
+			if (y != n)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
 		_putchar('\n');
-		a++;
+		x++;
 	}
 }
