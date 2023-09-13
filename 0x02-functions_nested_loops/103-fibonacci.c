@@ -6,17 +6,18 @@
  */
 int main(void)
 {
-	int a = 1, b = 2, total = 0;
-	int c;
+int i = 1, j = 2, total = 0;
+int k;
 
-	while (b < 4000000)
-	{
-		if (b % 2 == 0)
-			total += b;
+while (j < 4000000)
+{
+if (j % 2 == 0)
+total += j;
 
-		c = b;
-		b += a;
-		a = c;
-	}
-	printf("%d\n", total);
-	return (0);
+k = j;
+j += i;
+i = k;
+}
+printf("%d\n", total);
+return (0);
+}
