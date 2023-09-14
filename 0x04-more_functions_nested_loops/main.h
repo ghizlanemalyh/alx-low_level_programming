@@ -21,5 +21,3 @@ void print_triangle(int size);
 int mul(int a, int b);
 
 void print_number(int n);
-
-
