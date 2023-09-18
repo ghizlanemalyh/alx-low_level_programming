@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _putss - prints a string, fllowed by new line, to stdout
- * @str: string to print 
+ * _puts - prints a string, fllowed by new line, to stdout
+ *@str: string to print
  */
-void _puts (char *str)
+void _puts(char *str)
 {
 	while (*str != '\0')
 	{
