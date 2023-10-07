@@ -19,11 +19,14 @@ int check_num(char *str)
 		{
 			if (!isdigit(str[count])) /*check if str there are digit*/
 			{
+
 				return (0);
+
 			}
 
 			count++;
 		}
+
 		return (1);
 }
 
