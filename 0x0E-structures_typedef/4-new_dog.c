@@ -34,7 +34,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		{
 			free(i);
 			free(jango);
-			
 			return (NULL);
 		}
 		for (z = 0; z <= x; z++)
