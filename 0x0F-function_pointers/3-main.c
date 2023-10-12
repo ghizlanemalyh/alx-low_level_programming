@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[3]);
 		op_func = get_op_func(argv[2]);
@@ -28,17 +27,13 @@ int main(int argc, char *argv[])
 		if (!op_func)
 		{
 			printf("Error\n");
-		
 			return (99);
-		
 		}
-
 		if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
 		{
 			printf("Error\n");
-																	return (100);
+			return (100);
 		}
-
 		result = op_func(num1, num2);
 		printf("%d\n", result);
 

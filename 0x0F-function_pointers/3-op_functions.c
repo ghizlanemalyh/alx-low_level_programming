@@ -1,50 +1,30 @@
+#include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
-* op_add - sum of a and b
-* @a: first operand
-* @b: second operand
-* Return: a + b
+* get_op_func - func that selects correct op_ to make operation
+* @s: Type char str
+* Return: pointer to op_ of a and b return c or null if not operation
 */
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-		return (a + b);
-}
-/**
-* op_sub - substract of a and b
-* @a: first operand
-* @b: second operand
-* Return: a - b
-*/
-int op_sub(int a, int b)
-{
-		return (a - b);
-}
-/**
-* op_mul - multiply of a and b
-* @a: first operand
-* @b: second operand
-* Return: a * b
-*/
-int op_mul(int a, int b)
-{
-		return (a * b);
-}
-/**
-* op_div - divide of a and b
-* @a: first operand
-* @b: second operand
-* Return: a / b
-*/
-int op_div(int a, int b)
-{
-		return (a / b);
-}
-/**
-* op_mod - module of a and b
-* @a: first operand
-* @b: second operand
-* Return: a % b
-*/
-int op_mod(int a, int b)
-{
-		return (a % b);
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+		int i;
+
+		i = 0;
+
+		while (ops[i].op)
+		{
+			if (ops[i].op[0] == s[0] && s[1] == '\0')
+			return (ops[i].f);
+			++i;
+		}
+		return (NULL);
 }
